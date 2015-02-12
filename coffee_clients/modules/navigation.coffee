@@ -15,6 +15,8 @@ app.directive 'mainNav', ->
 			{label: 'Reports', link: '/reports'}
 			{label: 'Statements', link: '/statements'}
 			{label: 'TeamView', link: '/team-view'}
+		]
+		$scope.navDataRight = [
 			{label: 'Change Password', link: '/change-password'}
 			{label: 'Logout', link: '/logout'}
 		]

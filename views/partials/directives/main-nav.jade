@@ -6,8 +6,26 @@ nav.navbar.navbar-default
 			span.icon-bar
 			span.icon-bar
 			span.icon-bar
-		a.navbar-brand(href='#/') GoLPI
 	.collapse.navbar-collapse
 		ul.nav.navbar-nav
 			li(ng-class="item.link == path ? 'active' : ''", ng-repeat="item in navData")
 				a(href="#{{item.link}}") {{item.label}}
+		ul.nav.navbar-nav.navbar-right
+			li(ng-class="item.link == path ? 'active' : ''", ng-repeat="item in navDataRight")
+				a(href="#{{item.link}}") {{item.label}}
+			li
+				a.navbar-brand Testuser
+.container-fluid
+	ul.sub-nav
+		li.nav-item Currently Viewing Your Downline
+		li.nav-item
+			.input-group.pull-right
+				input.form-control(type='text', placeholder='Search By PIN')
+				span.input-group-addon
+					span.glyphicon.glyphicon-search
+		li.nav-item
+			select
+				option Uncompressed View
+		li.nav-item
+			select
+				option 02 / 2015

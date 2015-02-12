@@ -12,7 +12,7 @@
         $scope.$on('$locationChangeStart', function(event, next, current) {
           return $scope.path = next;
         });
-        return $scope.navData = [
+        $scope.navData = [
           {
             label: 'Fastalk Online',
             link: '/fastalk-online'
@@ -31,7 +31,10 @@
           }, {
             label: 'TeamView',
             link: '/team-view'
-          }, {
+          }
+        ];
+        return $scope.navDataRight = [
+          {
             label: 'Change Password',
             link: '/change-password'
           }, {
