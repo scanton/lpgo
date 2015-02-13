@@ -15,31 +15,31 @@
         $scope.navData = [
           {
             label: 'Fastalk Online',
-            link: '/fastalk-online'
+            link: 'fastalk-online'
           }, {
             label: 'Level 1 Partners',
-            link: '/level-1-partners'
+            link: 'level-1-partners'
           }, {
             label: 'Partner Addresses',
-            link: '/partner-addresses'
+            link: 'partner-addresses'
           }, {
             label: 'Reports',
-            link: '/reports'
+            link: 'reports'
           }, {
             label: 'Statements',
-            link: '/statements'
+            link: 'statements'
           }, {
             label: 'TeamView',
-            link: '/team-view'
+            link: 'team-view'
           }
         ];
         return $scope.navDataRight = [
           {
             label: 'Change Password',
-            link: '/change-password'
+            link: 'change-password'
           }, {
             label: 'Logout',
-            link: '/logout'
+            link: 'logout'
           }
         ];
       }

@@ -9,10 +9,10 @@ nav.navbar.navbar-default
 	.collapse.navbar-collapse
 		ul.nav.navbar-nav
 			li(ng-class="item.link == path ? 'active' : ''", ng-repeat="item in navData")
-				a(href="#{{item.link}}") {{item.label}}
+				a(href="{{item.link}}") {{item.label}}
 		ul.nav.navbar-nav.navbar-right
 			li(ng-class="item.link == path ? 'active' : ''", ng-repeat="item in navDataRight")
-				a(href="#{{item.link}}") {{item.label}}
+				a(href="{{item.link}}") {{item.label}}
 			li
 				a.navbar-brand Testuser
 .container-fluid

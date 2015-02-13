@@ -6,11 +6,12 @@ app = angular.module 'main', [
 	'config'
 	'btford.socket-io'
 	'navigation'
+	'pages'
 ]
 
 app.factory 'socket', (socketFactory) ->
 	socketFactory()
 
 app.controller 'MainController', ($scope, socket, $log) ->
-	$log.info 'MainController initialized in /coffee_clients/script.coffee'
+	#$log.info 'MainController initialized in /coffee_clients/script.coffee'
 
